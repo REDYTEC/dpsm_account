@@ -25,7 +25,7 @@
 
     <record id="account.action_move_in_invoice_type" model="ir.actions.act_window">
         <field name="name">Potato</field>
-        <field name="context">{'default_move_type': 'in_invoice', {'hide_gender': 1}/field>
+        <field name="context">{}</field>
     </record>
 
 </odoo>
