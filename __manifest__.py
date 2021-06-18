@@ -6,7 +6,9 @@
     'description': """Cambia la vista de formulario y la vista de árbol para mostrar referencias en el módulo de facturación""",
     'category': 'Extra Tools',
     'website': 'http://www.redytec.com',
-    'depends': [],
+    'depends': [
+        'account'
+    ],
     'data': [
 
     ],
