@@ -23,9 +23,10 @@
         </field>
     </record>-->
 
-    <record id="account.action_move_out_invoice_type" model="ir.actions.act_window">
-        <!--<field name="model">account.move</field>-->
-        <field anme="name">Potato</field>
+    <record id="account.action_move_out_invoice_type_inherited" model="ir.actions.act_window">
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.action_move_out_invoice_type"/>
+        <field name="name">Potato</field>
     </record>
 
 </odoo>
