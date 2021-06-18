@@ -23,9 +23,9 @@
         </field>
     </record>-->
 
-    <record id="account.action_move_out_invoice_type" model="ir.actions.act_window">
+    <!--<record id="account.action_move_out_invoice_type" model="ir.actions.act_window">
         <field name="name">Potato</field>
         <field name="context">{'default_move_type': 'out_invoice'}</field>
-    </record>
+    </record>-->
 
 </odoo>
