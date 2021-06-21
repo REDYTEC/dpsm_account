@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="sale_report_inherit" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//div[@class='mt32 ml64 mr4']" position="after">
+            <div class="mt32 ml64 mr4" id="test_inherit">
+                <div class="row-auto mw-100 mb-2">
+                    <strong>Consideraciones:</strong>
+                </div>
+                <div class="row-auto mw-100 mb-2">
+                    <data>Precios no incluyen IVA, precios sujetos a cambio sin previo aviso. Sujeto a existencias.
+                        Forma de pago: 100% al requerir la mercancía. Si su producto ha sido cotizado en dólares, el
+                        tipo de
+                        cambio final dependerá de la fecha en que se realice su pedido/pago y se basará en el tipo de
+                        cambio a la venta que publique Banamex por Internet. El tiempo de entrega es variable
+                        dependiendo del producto cotizado. En caso de no haber disponibles, podría aplicar cambio a
+                        producto similar.
+                    </data>
+                </div>
+                <div>
+                    <data>Esta cotización tiene vigencia de 05 días a partir de su expedición.</data>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

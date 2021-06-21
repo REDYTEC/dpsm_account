@@ -7,10 +7,12 @@
     'category': 'Extra Tools',
     'website': 'http://www.redytec.com',
     'depends': [
-        'account'
+        'account',
+        'sale'
     ],
     'data': [
-        'views/account_view.xml'
+        'views/account_view.xml',
+        'views/sale_report_inherit.xml'
     ],
     'demo': [],
     'qweb': [],
