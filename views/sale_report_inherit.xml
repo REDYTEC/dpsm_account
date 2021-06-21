@@ -3,11 +3,12 @@
     <template id="sale_report_inherit" inherit_id="sale.report_saleorder_document">
         <xpath expr="//div[@class='mt32 ml64 mr4']" position="after">
             <div class="mt32 ml64 mr4" id="test_inherit">
-                <div class="row-auto mw-100 mb-2">
+                <div class="row-auto mw-100 mb-2" t-if="doc.state in ['draft','sent']">
                     <strong>Consideraciones:</strong>
                 </div>
                 <div>
-                    <span t-if="doc.state in ['draft','sent']">Precios no incluyen IVA, precios sujetos a cambio sin previo aviso. Sujeto a existencias.
+                    <span t-if="doc.state in ['draft','sent']">
+                        Precios no incluyen IVA, precios sujetos a cambio sin previo aviso. Sujeto a existencias.
                         Forma de pago: 100% al requerir la mercancía. Si su producto ha sido cotizado en dólares, el
                         tipo de
                         cambio final dependerá de la fecha en que se realice su pedido/pago y se basará en el tipo de
@@ -17,7 +18,9 @@
                     </span>
                 </div>
                 <div>
-                    <data>Esta cotización tiene vigencia de 05 días a partir de su expedición.</data>
+                    <span t-if="doc.state in ['draft','sent']">
+                        Esta cotización tiene vigencia de 05 días a partir de su expedición.
+                    </span>
                 </div>
             </div>
         </xpath>
