@@ -4,7 +4,7 @@
         <xpath expr="//div[@class='mt32 ml64 mr4']" position="after">
             <div class="mt32 ml64 mr4" id="test_inherit">
                 <div class="row-auto mw-100 mb-2">
-                    <strong states="draft,sent">Consideraciones:</strong>
+                    <strong invisible="state.get('state')!='draft'">Consideraciones:</strong>
                 </div>
                 <div class="row-auto mw-100 mb-2">
                     <data>Precios no incluyen IVA, precios sujetos a cambio sin previo aviso. Sujeto a existencias.
