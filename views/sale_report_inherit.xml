@@ -3,7 +3,7 @@
     <template id="sale_report_inherit" inherit_id="sale.report_saleorder_document">
         <xpath expr="//div[@class='mt32 ml64 mr4']" position="after">
             <div class="mt32 ml64 mr4" id="test_inherit">
-                <div class="row-auto mw-100 mb-2" t-if="doc.state in ['draft','sent']">
+                <div class="row-auto mw-100 mb-2">
                     <strong>Consideraciones:</strong>
                 </div>
                 <div>
@@ -15,6 +15,12 @@
                         cambio a la venta que publique Banamex por Internet. El tiempo de entrega es variable
                         dependiendo del producto cotizado. En caso de no haber disponibles, podría aplicar cambio a
                         producto similar.
+                    </span>
+                    <span t-if="doc.state in ['draft','sent']">
+                        Moneda en Dólares
+                    </span>
+                    <span t-if="doc.state in ['sale','done']">
+                        Modeda en Pesos
                     </span>
                 </div>
                 <div>
