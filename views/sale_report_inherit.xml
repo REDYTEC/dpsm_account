@@ -10,6 +10,8 @@
                     <span t-if="doc.state in ['draft','sent']">
                         Moneda en Dólares.
                     </span>
+                </div>
+                <div>
                     <span t-if="doc.state in ['draft','sent']">
                         Precios no incluyen IVA, precios sujetos a cambio sin previo aviso. Sujeto a existencias.
                         Forma de pago: 100% al requerir la mercancía. Si su producto ha sido cotizado en dólares, el
