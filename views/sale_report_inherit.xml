@@ -7,9 +7,11 @@
                     <strong>Consideraciones:</strong>
                 </div>
                 <div>
-                    <span t-if="doc.state in ['draft','sent']" style="margin-bottom:100px;">
+                    <span t-if="doc.state in ['draft','sent']">
                         Moneda en Dólares.
                     </span>
+                </div>
+                <div style="height:50px">
                 </div>
                 <div>
                     <span t-if="doc.state in ['draft','sent']">
