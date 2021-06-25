@@ -10,6 +10,9 @@
                     <span t-if="doc.state in ['draft','sent']">
                         Moneda en Dólares.
                     </span>
+                    <span t-if="doc.state in ['sale','done']">
+                        Modeda en Pesos.
+                    </span>
                     <div style="height:20px">
                     </div>
                 </div>
@@ -24,7 +27,9 @@
                         producto similar.
                     </span>
                     <span t-if="doc.state in ['sale','done']">
-                        Modeda en Pesos.
+                        El tiempo de entrega es variable
+                        dependiendo del producto cotizado. En caso de no haber disponibles, podría aplicar cambio a
+                        producto similar.
                     </span>
                 </div>
                 <div>
