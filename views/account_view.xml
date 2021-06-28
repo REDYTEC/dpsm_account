@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="account.view_move_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='payment_reference']" position="after">
-                <field name="ref" string="Referencia de cliente"
+                <field name="ref" string="Referencia de factura"
                        invisible="context.get('default_move_type')!='out_invoice'"/>
             </xpath>
         </field>
