@@ -9,5 +9,5 @@ class SaleOrder(models.Model):
 class SaleInherit(models.Model):
     _inherit = "sale.order"
 
-    client = fields.Boolean(string='Sale Description')
+    client = fields.Boolean(string='Cliente')
 
