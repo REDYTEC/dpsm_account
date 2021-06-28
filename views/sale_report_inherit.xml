@@ -6,16 +6,14 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
-            <notebook position="inside">
-                <page name="other_information" position="after">
-                    <page string="Banco">
-                        <group>
-                            <field name="psm"/>
-                            <field name="zk"/>
-                        </group>
-                    </page>
+            <page name="other_information" position="after">
+                <page string="Banco">
+                    <group>
+                        <field name="psm"/>
+                        <field name="zk"/>
+                    </group>
                 </page>
-            </notebook>
+            </page>
         </field>
     </record>
 
