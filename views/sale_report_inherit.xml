@@ -19,7 +19,7 @@
                 <table class="table bank_info" style="width:25%;">
                     <thead style="display: table-row-group">
                         <tr>
-                            <th name="clients">
+                            <th name="clients" t-if="doc.client">
                                 CLIENTES (DEPOSITOS)
                             </th>
                         </tr>
