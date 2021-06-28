@@ -28,26 +28,28 @@
                         </tr>
                     </thead>
                     <tbody class="bank_tbody">
-                        <tr>
-                            <td>Nombre</td>
-                            <td>PROYECTA SISTEMAS DE MEXICO SA DE CV</td>
-                        </tr>
-                        <tr>
-                            <td>Banco</td>
-                            <td>Banorte</td>
-                        </tr>
-                        <tr>
-                            <td>Cuenta No</td>
-                            <td>0271835631</td>
-                        </tr>
-                        <tr>
-                            <td>Cable</td>
-                            <td>072320002718356312</td>
-                        </tr>
-                        <tr>
-                            <td>RFC</td>
-                            <td>PSM 141104 HA1</td>
-                        </tr>
+                        <t t-if="doc.client">
+                            <tr>
+                                <td>Nombre</td>
+                                <td>PROYECTA SISTEMAS DE MEXICO SA DE CV</td>
+                            </tr>
+                            <tr>
+                                <td>Banco</td>
+                                <td>Banorte</td>
+                            </tr>
+                            <tr>
+                                <td>Cuenta No</td>
+                                <td>0271835631</td>
+                            </tr>
+                            <tr>
+                                <td>Cable</td>
+                                <td>072320002718356312</td>
+                            </tr>
+                            <tr>
+                                <td>RFC</td>
+                                <td>PSM 141104 HA1</td>
+                            </tr>
+                        </t>
                     </tbody>
                 </table>
                 <div class="row-auto mw-100 mb-2">
