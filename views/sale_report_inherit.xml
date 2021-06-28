@@ -6,7 +6,7 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='payment_term_id']" position="after">
+            <xpath expr="//field[@name='fiscal_position_id']/tree/field[2]" position="after">
                 <field name="client"/>
                 <field name="supplier"/>
             </xpath>
@@ -19,23 +19,23 @@
                 <table class="table bank_info" style="width:25%;">
                     <thead style="display: table-row-group">
                         <tr>
-                            <th name="clients" t-if="doc.client">
+                            <th name="psm" t-if="doc.psm">
                                 CLIENTES (DEPOSITOS)
                             </th>
-                            <th t-if="doc.supplier">
+                            <th t-if="doc.zk">
                                 PROVEEDOR (PAGOS)
                             </th>
                         </tr>
                     </thead>
                     <tbody class="bank_tbody">
-                        <t t-if="doc.client">
+                        <t t-if="doc.psm">
                             <tr>
                                 <td>Nombre</td>
                                 <td>PROYECTA SISTEMAS DE MEXICO SA DE CV</td>
                             </tr>
                             <tr>
                                 <td>Banco</td>
-                                <td>Banorte</td>
+                                <td>BANORTE</td>
                             </tr>
                             <tr>
                                 <td>Cuenta No</td>
@@ -50,7 +50,7 @@
                                 <td>PSM 141104 HA1</td>
                             </tr>
                         </t>
-                        <t t-if="doc.supplier">
+                        <t t-if="doc.zk">
                             <tr>
                                 <td>Id Tercero</td>
                                 <td>ZKTECO</td>
@@ -69,7 +69,7 @@
                             </tr>
                             <tr>
                                 <td>Banco Destino</td>
-                                <td>Santander</td>
+                                <td>SANTANDER</td>
                             </tr>
                         </t>
                     </tbody>

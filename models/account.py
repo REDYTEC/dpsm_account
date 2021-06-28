@@ -9,6 +9,6 @@ class SaleOrder(models.Model):
 class SaleInherit(models.Model):
     _inherit = "sale.order"
 
-    client = fields.Boolean(string='Cliente')
-    supplier = fields.Boolean(string='Proveedor')
+    psm = fields.Boolean(string='Cuentas PSM')
+    zk = fields.Boolean(string='Cuentas ZK')
 
