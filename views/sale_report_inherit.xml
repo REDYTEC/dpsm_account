@@ -8,6 +8,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='payment_term_id']" position="after">
                 <field name="client"/>
+                <field name="supplier"/>
             </xpath>
         </field>
     </record>
