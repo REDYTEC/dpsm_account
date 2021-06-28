@@ -50,6 +50,28 @@
                                 <td>PSM 141104 HA1</td>
                             </tr>
                         </t>
+                        <t t-if="doc.supplier">
+                            <tr>
+                                <td>Id Tercero</td>
+                                <td>ZKTECO</td>
+                            </tr>
+                            <tr>
+                                <td>Nombre Del Beneficiario</td>
+                                <td>ZKTECO LATAM S.A. DE C.V.</td>
+                            </tr>
+                            <tr>
+                                <td>Cuenta/Clabe/Celular</td>
+                                <td>014180655056109355</td>
+                            </tr>
+                            <tr>
+                                <td>RFC Beneficiario</td>
+                                <td>ZLA160218A6I</td>
+                            </tr>
+                            <tr>
+                                <td>Banco Destino</td>
+                                <td>Santander</td>
+                            </tr>
+                        </t>
                     </tbody>
                 </table>
                 <div class="row-auto mw-100 mb-2">
