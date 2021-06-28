@@ -22,6 +22,9 @@
                             <th name="clients" t-if="doc.client">
                                 CLIENTES (DEPOSITOS)
                             </th>
+                            <th t-if="doc.supplier">
+                                PROVEEDOR (PAGOS)
+                            </th>
                         </tr>
                     </thead>
                     <tbody class="bank_tbody">
