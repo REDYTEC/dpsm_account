@@ -20,7 +20,7 @@
     <template id="sale_report_inherit" inherit_id="sale.report_saleorder_document">
         <xpath expr="//div[@class='mt32 ml64 mr4']" position="after">
             <div class="mt32 ml64 mr4" id="test_inherit">
-                <table class="table bank_info" style="width:25%;">
+                <table class="table bank_info" style="width:25%; page-break-inside: avoid;">
                     <thead style="display: table-row-group">
                         <tr>
                             <th name="psm" t-if="doc.psm">
