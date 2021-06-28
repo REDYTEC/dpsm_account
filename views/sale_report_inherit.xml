@@ -6,10 +6,16 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='order_line']/tree/field[2]" position="after">
-                <field name="psm"/>
-                <field name="zk"/>
-            </xpath>
+            <notebook position="inside">
+                <page name="other_information" position="after">
+                    <page string="Banco">
+                        <group>
+                            <field name="psm"/>
+                            <field name="zk"/>
+                        </group>
+                    </page>
+                </page>
+            </notebook>
         </field>
     </record>
 
