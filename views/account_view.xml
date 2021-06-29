@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
+<!--    showing field in account form view for clients-->
     <record id="view_account_form_inherited" model="ir.ui.view">
         <field name="name">account.move.inherited</field>
         <field name="model">account.move</field>
@@ -13,6 +14,7 @@
         </field>
     </record>
 
+<!--    showing field in list view in account for suppliers-->
     <record id="view_order_tree_inherited" model="ir.ui.view">
         <field name="name">account.move.inherited</field>
         <field name="model">account.move</field>
