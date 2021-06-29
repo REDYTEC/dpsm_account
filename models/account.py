@@ -9,6 +9,17 @@ class SaleOrder(models.Model):
 class SaleInherit(models.Model):
     _inherit = "sale.order"
 
-    psm = fields.Boolean(string='Cuentas PSM')
-    zk = fields.Boolean(string='Cuentas ZK')
+    pay_rate = fields.Many2one('product.pricelist')
+    nombre = fields.Char()
+    banco = fields.Char()
+    cuenta = fields.Char()
+    cable = fields.Char()
+    rfc = fields.Char()
+
+    def table_condition(self):
+        if self.pay_rate.name == 'Tarifa de Distribuidores (MXN)' or self.pay_rate.name == Tarifa de Distribuidores (USD):
+            self.nombre = 'ZKTECO LATAM S.A. DE C.V.'
+
+    # psm = fields.Boolean(string='Cuentas PSM')
+    # zk = fields.Boolean(string='Cuentas ZK')
 
