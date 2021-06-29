@@ -19,6 +19,8 @@ class SaleInherit(models.Model):
     def table_condition(self):
         if self.pay_rate.name == 'Tarifa de Distribuidores (MXN)' or self.pay_rate.name == Tarifa de Distribuidores (USD):
             self.nombre = 'ZKTECO LATAM S.A. DE C.V.'
+        else:
+            self.nombre = ''
 
     # psm = fields.Boolean(string='Cuentas PSM')
     # zk = fields.Boolean(string='Cuentas ZK')
