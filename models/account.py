@@ -2,10 +2,6 @@
 from odoo import api, fields, models, _, tools
 
 
-# class SaleOrder(models.Model):
-#     _inherit = "account.move"
-
-
 class SaleInherit(models.Model):
     _inherit = "sale.order"
 
