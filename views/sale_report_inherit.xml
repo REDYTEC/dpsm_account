@@ -32,23 +32,32 @@
                         <tr>
                             <td>Nombre</td>
                             <td t-if="doc.psm">PROYECTA SISTEMAS DE MEXICO SA DE CV</td>
-                            <td t-if="doc.zk">ZK</td>
+                            <td t-if="doc.zk">ZKTECO LATAM S.A. DE C.V.</td>
                         </tr>
                         <tr>
                             <td>Banco</td>
-                            <td>BANORTE</td>
+                            <td t-if="doc.psm">BANORTE</td>
+                            <td t-if="doc.zk">SANTANDER</td>
                         </tr>
                         <tr>
-                            <td>Cuenta No</td>
-                            <td>0271835631</td>
+                            <t t-if="doc.psm">
+                                <td>Cuenta No</td>
+                                <td>0271835631</td>
+                            </t>
+                            <t t-if="doc.zk">
+                                <td>ID Tercero</td>
+                                <td>ZKTECO</td>
+                            </t>
                         </tr>
                         <tr>
-                            <td>Cable</td>
-                            <td>072320002718356312</td>
+                            <td>Clabe</td>
+                            <td t-if="doc.psm">072320002718356312</td>
+                            <td t-if="doc.zk">014180655056109355</td>
                         </tr>
                         <tr>
                             <td>RFC</td>
-                            <td>PSM 141104 HA1</td>
+                            <td t-if="doc.psm">PSM 141104 HA1</td>
+                            <td t-if="doc.zk"> ZLA160218A6I</td>
                         </tr>
                     </tbody>
                 </table>
