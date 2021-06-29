@@ -7,7 +7,7 @@ class SaleOrder(models.Model):
 
 
 class SaleInherit(models.Model):
-    _inherit = ["sale.order", "product.pricelist"]
+    _inherit = "sale.order"
 
     pay_rate = fields.Many2one('product.pricelist')
     nombre = fields.Char()
@@ -17,7 +17,7 @@ class SaleInherit(models.Model):
     rfc = fields.Char()
 
     def table_condition(self):
-        if self.pay_rate.name == 'Tarifa de Distribuidores (MXN)' or self.pay_rate.name == 'Tarifa de Distribuidores (USD)':
+        if self.pay_rate == 'Tarifa de Distribuidores (MXN)' or self.pay_rate.name == 'Tarifa de Distribuidores (USD)':
             self.nombre = 'ZKTECO LATAM S.A. DE C.V.'
         else:
             self.nombre = ''
