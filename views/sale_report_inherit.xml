@@ -32,7 +32,7 @@
                         <tr>
                             <td>Nombre</td>
                             <td>
-                                <span t-field="nombre"/>
+                                <span t-esc="nombre"/>
                             </td>
                         </tr>
                         <tr>
