@@ -14,7 +14,7 @@
         </field>
     </record>
 
-<!--    showing field in list view in account for suppliers-->
+<!--    showing field in list view in account for clients-->
     <record id="view_order_tree_inherited" model="ir.ui.view">
         <field name="name">account.move.inherited</field>
         <field name="model">account.move</field>
