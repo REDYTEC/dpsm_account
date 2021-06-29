@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <record id="view_order_form_inherited" model="ir.ui.view">
-        <field name="name">sale.order.inherited</field>
-        <field name="model">sale.order</field>
-        <field name="inherit_id" ref="sale.view_order_form"/>
-        <field name="arch" type="xml">
-            <page name="other_information" position="after">
-                <page string="Banco">
-                    <group>
-                        <field name="psm"/>
-                        <field name="zk"/>
-                    </group>
-                </page>
-            </page>
-        </field>
-    </record>
+<!--    <record id="view_order_form_inherited" model="ir.ui.view">-->
+<!--        <field name="name">sale.order.inherited</field>-->
+<!--        <field name="model">sale.order</field>-->
+<!--        <field name="inherit_id" ref="sale.view_order_form"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <page name="other_information" position="after">-->
+<!--                <page string="Banco">-->
+<!--                    <group>-->
+<!--                        <field name="psm"/>-->
+<!--                        <field name="zk"/>-->
+<!--                    </group>-->
+<!--                </page>-->
+<!--            </page>-->
+<!--        </field>-->
+<!--    </record>-->
 
     <template id="sale_report_inherit" inherit_id="sale.report_saleorder_document">
         <xpath expr="//div[@class='mt32 ml64 mr4']" position="after">
@@ -23,11 +23,8 @@
                 <table class="table bank_info" style="width:25%; page-break-inside: avoid;">
                     <thead style="display: table-row-group">
                         <tr>
-                            <th name="psm" t-if="doc.psm">
-                                CLIENTES (DEPOSITOS)
-                            </th>
-                            <th t-if="doc.zk">
-                                PROVEEDOR (PAGOS)
+                            <th name="bank_info">
+                                CUENTAS BANCARIAS
                             </th>
                         </tr>
                     </thead>
