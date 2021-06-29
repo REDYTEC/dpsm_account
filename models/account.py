@@ -7,7 +7,7 @@ class SaleOrder(models.Model):
 
 
 class SaleInherit(models.Model):
-    _inherit = "sale.order"
+    _inherit = ["sale.order", "product.pricelist"]
 
     pay_rate = fields.Many2one('product.pricelist')
     nombre = fields.Char()
