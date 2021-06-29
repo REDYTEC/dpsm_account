@@ -15,9 +15,6 @@
                     </group>
                 </page>
             </page>
-            <xpath expr="//field[@name='date_order']" position="attributes">
-                <attribute name="readonly">False</attribute>
-            </xpath>
         </field>
     </record>
 
