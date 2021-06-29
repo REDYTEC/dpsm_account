@@ -31,9 +31,8 @@
                     <tbody class="bank_tbody">
                         <tr>
                             <td>Nombre</td>
-                            <td>
-                                <span t-esc="nombre"/>
-                            </td>
+                            <td t-if="doc.psm">PROYECTA SISTEMAS DE MEXICO SA DE CV</td>
+                            <td t-if="doc.zk">ZK</td>
                         </tr>
                         <tr>
                             <td>Banco</td>
