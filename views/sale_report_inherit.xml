@@ -62,6 +62,9 @@
                         </tr>
                     </tbody>
                 </table>
+                <div>
+                    <span t-field="goat.image" t-options='{"widget": "image"}'/>
+                </div>
                 <div class="row-auto mw-100 mb-2">
                     <strong>Consideraciones:</strong>
                 </div>
@@ -74,9 +77,6 @@
                     </span>
                     <div style="height:20px">
                     </div>
-                </div>
-                <div>
-                    <img t-att-src="langosta.png" class="float-left" alt="Langosta"/>
                 </div>
                 <div>
                     <span t-if="doc.state in ['draft','sent']">
