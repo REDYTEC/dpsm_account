@@ -10,7 +10,7 @@
             <page name="other_information" position="after">
                 <page string="Banco">
                     <group>
-                        <field name="psm"/>
+                        <field name="psm" attrs="{'invisible': [('zk','=',True)]}"/>
                         <field name="zk"/>
                     </group>
                 </page>
