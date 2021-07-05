@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <div>
-                    <img class="img" src="/dpsm_account/static/src/img/langosta.png" style="height:45%;width:100%;"/>
+                    <img t-att-src="langosta.png" class="float-left" alt="Langosta"/>
                 </div>
                 <div>
                     <span t-if="doc.state in ['draft','sent']">
