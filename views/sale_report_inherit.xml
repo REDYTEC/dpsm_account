@@ -8,7 +8,7 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
             <page name="other_information" position="after">
-                <page string="Banco">
+                <page string="Info. Cuentas">
                     <group>
                         <field name="psm" attrs="{'invisible': [('zk','=',True)]}"/>
                         <field name="zk" attrs="{'invisible': [('psm','=',True)]}"/>
