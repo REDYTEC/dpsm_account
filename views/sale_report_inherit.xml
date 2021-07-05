@@ -63,7 +63,7 @@
                     </tbody>
                 </table>
                 <div>
-                    <span t-field="goat.image" t-options='{"widget": "image"}'/>
+                    <img src="goat.jpg" alt="Goat"/>
                 </div>
                 <div class="row-auto mw-100 mb-2">
                     <strong>Consideraciones:</strong>
