@@ -12,7 +12,7 @@
     ],
     'data': [
         'views/account_view.xml',
-        'views/sale_report_inherit.xml'
+        'views/sale_report_inherit.xml',
         'views/goat.jpg'
     ],
     'demo': [],
