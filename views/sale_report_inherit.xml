@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-<!--    adding buttons to select the data for the bank table-->
-    <record id="view_order_form_inherited" model="ir.ui.view">
-        <field name="name">sale.order.inherited</field>
+    <!--    adding buttons to select the data for the bank table-->
+    <!--    <record id="view_order_form_inherited" model="ir.ui.view">-->
+    <!--        <field name="name">sale.order.inherited</field>-->
+    <!--        <field name="model">sale.order</field>-->
+    <!--        <field name="inherit_id" ref="sale.view_order_form"/>-->
+    <!--        <field name="arch" type="xml">-->
+    <!--            <page name="other_information" position="after">-->
+    <!--                <page string="Banco">-->
+    <!--                    <group>-->
+    <!--                        <field name="psm"/>-->
+    <!--                        <field name="zk"/>-->
+    <!--                    </group>-->
+    <!--                </page>-->
+    <!--            </page>-->
+    <!--        </field>-->
+    <!--    </record>-->
+
+    <record id="inherit_sale_order_line" model="ir.ui.view">
+        <field name="name">inherit.sale.order.line.form.view</field>
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="priority" eval="50"/>
         <field name="arch" type="xml">
-            <page name="other_information" position="after">
-                <page string="Banco">
-                    <group>
-                        <field name="psm"/>
-                        <field name="zk"/>
-                    </group>
-                </page>
-            </page>
+            <xpath expr="//field[@name='order_line']/tree/field[2]" position="after">
+                <field name="psm"/>
+            </xpath>
         </field>
     </record>
 
@@ -58,7 +70,7 @@
                         <tr>
                             <td>RFC</td>
                             <td t-if="doc.psm">PSM 141104 HA1</td>
-                            <td t-if="doc.zk"> ZLA160218A6I</td>
+                            <td t-if="doc.zk">ZLA160218A6I</td>
                         </tr>
                     </tbody>
                 </table>
