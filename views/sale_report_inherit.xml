@@ -11,7 +11,7 @@
                 <page string="Banco">
                     <group>
                         <field name="psm" attrs="{'invisible': [('zk','=',True)]}"/>
-                        <field name="zk"/>
+                        <field name="zk" attrs="{'invisible': [('psm','=',True)]}"/>
                     </group>
                 </page>
             </page>
