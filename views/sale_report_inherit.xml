@@ -76,6 +76,9 @@
                     </div>
                 </div>
                 <div>
+                    <img src="langosta.png"/>
+                </div>
+                <div>
                     <span t-if="doc.state in ['draft','sent']">
                         Precios mostrados en esta propuesta incluyen IVA. Precios sujetos a cambio sin previo aviso.
                         Sujeto a existencias.
