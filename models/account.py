@@ -3,7 +3,7 @@ from odoo import api, fields, models, _, tools
 
 
 class SaleInherit(models.Model):
-    _inherit = ["sale.order", "sale.order.line"]
+    _inherit = "sale.order"
 
     psm = fields.Boolean(string='Cuentas PSM')
     zk = fields.Boolean(string='Cuentas ZK')
