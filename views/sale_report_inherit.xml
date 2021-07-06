@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-<!--    adding buttons to select the data for the bank table-->
+    <!--    adding buttons to select the data for the bank table-->
     <record id="view_order_form_inherited" model="ir.ui.view">
         <field name="name">sale.order.inherited</field>
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
+            <field name='client_order_ref' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
             <page name="other_information" position="after">
                 <page string="Info. Cuentas">
                     <group>
@@ -58,7 +61,7 @@
                         <tr>
                             <td>RFC</td>
                             <td t-if="doc.psm">PSM 141104 HA1</td>
-                            <td t-if="doc.zk"> ZLA160218A6I</td>
+                            <td t-if="doc.zk">ZLA160218A6I</td>
                         </tr>
                     </tbody>
                 </table>
