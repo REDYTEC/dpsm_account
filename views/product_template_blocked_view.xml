@@ -19,7 +19,12 @@
             <field name='purchase_ok' position="attributes">
                 <attribute name="readonly">1</attribute>
             </field>
-
+            <field name='sale_ok' position="attributes">
+                <attribute name="readonly">1</attribute>
+            </field>
+            <field name='name' position="attributes">
+                <attribute name="readonly">1</attribute>
+            </field>
         </field>
     </record>
 
