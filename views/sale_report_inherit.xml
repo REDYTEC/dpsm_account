@@ -7,12 +7,6 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
-            <field name='pricelist_id' position="attributes">
-                <attribute name="readonly">False</attribute>
-            </field>
-            <field name='date_order' position="attributes">
-                <attribute name="readonly">False</attribute>
-            </field>
             <page name="other_information" position="after">
                 <page string="Info. Cuentas">
                     <group>
