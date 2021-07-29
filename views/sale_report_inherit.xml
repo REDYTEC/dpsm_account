@@ -6,9 +6,9 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_sale_order_calendar"/>
         <field name="arch" type="xml">
-            <field name='sale.view_sale_order_calendar' position="attributes">
+            <calendar position="attributes">
                 <attribute name="mode">month</attribute>
-            </field>
+            </calendar>
         </field>
     </record>
 
