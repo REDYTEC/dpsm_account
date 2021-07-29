@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
+    <record id="view_order_calendar_cust" model="ir.ui.view">
+        <field name="name">sale.order.calendar.cust</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_sale_order_calendar"/>
+        <field name="arch" type="xml">
+            <field name='sale.view_sale_order_calendar' position="attributes">
+                <attribute name="mode">month</attribute>
+            </field>
+        </field>
+    </record>
+
     <!--    adding buttons to select the data for the bank table-->
     <record id="view_order_form_inherited" model="ir.ui.view">
         <field name="name">sale.order.inherited</field>
