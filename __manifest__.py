@@ -9,10 +9,12 @@
     'depends': [
         'account',
         'sale',
+        'calendar',
     ],
     'data': [
         'views/account_view.xml',
         'views/sale_report_inherit.xml',
+        'views/calendar_custom_view.xml',
     ],
     'demo': [],
     'qweb': [],
