@@ -10,6 +10,8 @@
         'account',
         'sale',
         'calendar',
+        'purchase',
+        'stock',
     ],
     'data': [
         'views/account_view.xml',

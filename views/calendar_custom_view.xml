@@ -12,4 +12,26 @@
         </field>
     </record>
 
+    <record id="view_purchase_calendar_cust" model="ir.ui.view">
+        <field name="name">calendar.purchase.cust</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_calendar"/>
+        <field name="arch" type="xml">
+            <calendar position="attributes">
+                <attribute name="mode">month</attribute>
+            </calendar>
+        </field>
+    </record>
+
+    <record id="view_stock_calendar_cust" model="ir.ui.view">
+        <field name="name">calendar.stock.cust</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.stock_picking_calendar"/>
+        <field name="arch" type="xml">
+            <calendar position="attributes">
+                <attribute name="mode">month</attribute>
+            </calendar>
+        </field>
+    </record>
+
 </odoo>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
+<!--    setting month as the default in calendar view-->
+
     <record id="view_order_calendar_cust" model="ir.ui.view">
         <field name="name">sale.order.calendar.cust</field>
         <field name="model">sale.order</field>
