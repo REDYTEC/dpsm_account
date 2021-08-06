@@ -33,7 +33,7 @@
 
     <template id="sale_report_inherit" inherit_id="sale.report_saleorder_document">
 <!--        <xpath expr="//div[@class='mt32 ml64 mr4']" position="after">-->
-        <xpath expr="//div[@class='offset-8']" position="after">
+        <xpath expr="//div[@class='offset-8']" position="before">
             <div class="mt32 ml64 mr4" id="test_inherit">
                 <table t-if="doc.psm or doc.zk" class="table bank_info" style="width:25%; page-break-inside: avoid;">
                     <thead style="display: table-row-group">
